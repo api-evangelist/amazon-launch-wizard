@@ -1,0 +1,8 @@
+{
+  "id": "deployment-abc12345",
+  "name": "sap-hana-production",
+  "workloadName": "SAP HANA",
+  "status": "COMPLETED",
+  "createdAt": "2025-03-15T14:30:00Z",
+  "deletedAt": "2025-03-15T14:30:00Z"
+}

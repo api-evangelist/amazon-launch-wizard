@@ -1,0 +1,72 @@
+vocabulary: 1.0.0
+info:
+  provider: Amazon Launch Wizard
+  description: Unified vocabulary for Amazon Launch Wizard API operations and capability workflows.
+  created: '2026-04-19'
+  modified: '2026-04-19'
+operational:
+  apis:
+  - namespace: launch-wizard
+    version: '2024-01-01'
+    status: active
+  resources:
+  - name: deployments
+    api: launch-wizard
+    actions:
+    - create deployment
+    - list deployments
+    - get deployment
+    - delete deployment
+    - list workloads
+  actions:
+  - name: create
+    http_method: POST
+    pattern: write
+  - name: list
+    http_method: GET
+    pattern: read
+  - name: describe
+    http_method: GET
+    pattern: read
+  - name: update
+    http_method: PUT
+    pattern: write
+  - name: delete
+    http_method: DELETE
+    pattern: destructive
+  authentication:
+    schemes:
+    - type: apikey
+      header: Authorization
+      description: AWS Signature Version 4
+capability:
+  workflows:
+  - name: Amazon Launch Wizard Workflow
+    file: capabilities/amazon-launch-wizard-workflow.yaml
+    description: Unified workflow for Amazon Launch Wizard resource management
+    apis_combined:
+    - launch-wizard
+    tool_count: 3
+    personas:
+    - Developer
+    - Administrator
+  personas:
+  - id: developer
+    name: Developer
+    description: Integrates API into applications
+  - id: administrator
+    name: Administrator
+    description: Manages resources and configurations
+crossReference:
+- resource: deployments
+  operations:
+  - CreateDeployment
+  - ListDeployments
+  - GetDeployment
+  - DeleteDeployment
+  - ListWorkloads
+  workflows:
+  - Amazon Launch Wizard Workflow
+  personas:
+  - Developer
+  - Administrator

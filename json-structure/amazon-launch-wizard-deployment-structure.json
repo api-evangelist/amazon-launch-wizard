@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-launch-wizard/refs/heads/main/json-structure/amazon-launch-wizard-deployment-structure.json",
+  "name": "Deployment",
+  "description": "An Amazon Launch Wizard deployment of an enterprise application.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "The ID of the deployment.",
+      "example": "deployment-abc12345"
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the deployment.",
+      "example": "sap-hana-production"
+    },
+    "workloadName": {
+      "type": "string",
+      "description": "The name of the workload.",
+      "example": "SAP HANA"
+    },
+    "status": {
+      "type": "string",
+      "description": "The current status of the deployment.",
+      "example": "COMPLETED",
+      "enum": [
+        "COMPLETED",
+        "CREATING",
+        "FAILED",
+        "IN_PROGRESS",
+        "VALIDATING"
+      ]
+    },
+    "createdAt": {
+      "type": "datetime",
+      "description": "The time the deployment was created."
+    },
+    "deletedAt": {
+      "type": "datetime",
+      "description": "The time the deployment was deleted."
+    }
+  }
+}
