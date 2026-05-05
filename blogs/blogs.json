@@ -1,0 +1,13 @@
+{
+  "repo": "amazon-launch-wizard",
+  "feeds": [
+    {
+      "source": "https://aws.amazon.com/blogs/apn/tag/aws-launch-wizard/",
+      "feed_url": "https://aws.amazon.com/blogs/apn/tag/aws-launch-wizard/feed/",
+      "saved": 4,
+      "title": "AWS Launch Wizard \u2013 AWS Partner Network (APN) Blog"
+    }
+  ],
+  "post_count": 4,
+  "fetched": "2026-05-03T23:21:31Z"
+}
