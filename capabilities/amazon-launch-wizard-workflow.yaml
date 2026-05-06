@@ -1,4 +1,4 @@
-naftiko: 1.0.0-alpha1
+naftiko: 1.0.0-alpha2
 info:
   label: Amazon Launch Wizard Workflow
   description: Unified workflow capability for Amazon Launch Wizard combining resource management and operations.
@@ -7,7 +7,7 @@ info:
   - AWS
   - Workflow
   created: '2026-04-19'
-  modified: '2026-04-19'
+  modified: '2026-05-06'
 binds:
 - namespace: env
   keys:
@@ -15,8 +15,44 @@ binds:
     AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY
 capability:
   consumes:
-  - import: launch-wizard
-    location: ./shared/launch-wizard.yaml
+  - type: http
+    namespace: launch-wizard
+    baseUri: https://launchwizard.us-east-1.amazonaws.com
+    description: Amazon Launch Wizard service.
+    authentication:
+      type: apikey
+      key: Authorization
+      value: '{{AWS_ACCESS_KEY_ID}}'
+      placement: header
+    resources:
+    - name: deployments
+      path: /deployments
+      description: Launch Wizard deployment management
+      operations:
+      - name: createdeployment
+        method: POST
+        description: Creates a deployment for the given workload.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+      - name: listdeployments
+        method: GET
+        description: Lists the deployments that have been created.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+      - name: getdeployment
+        method: GET
+        description: Returns information about the deployment.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
   exposes:
   - type: rest
     port: 8080
