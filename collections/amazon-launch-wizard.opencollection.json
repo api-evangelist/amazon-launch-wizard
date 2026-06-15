@@ -1,0 +1,97 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Amazon Launch Wizard API",
+    "version": "2024-01-01"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "Authorization",
+      "value": "{{Authorization}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Deployments",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Amazon Launch Wizard List Deployments",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://launchwizard.us-east-1.amazonaws.com/deployments"
+          },
+          "docs": "Lists the deployments that have been created."
+        },
+        {
+          "info": {
+            "name": "Amazon Launch Wizard Create Deployment",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://launchwizard.us-east-1.amazonaws.com/deployments"
+          },
+          "docs": "Creates a deployment for the given workload."
+        },
+        {
+          "info": {
+            "name": "Amazon Launch Wizard Get Deployment",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://launchwizard.us-east-1.amazonaws.com/deployments/:deploymentId",
+            "params": [
+              {
+                "name": "deploymentId",
+                "value": "",
+                "type": "path",
+                "description": "The ID of the deployment."
+              }
+            ]
+          },
+          "docs": "Returns information about the deployment."
+        },
+        {
+          "info": {
+            "name": "Amazon Launch Wizard Delete Deployment",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://launchwizard.us-east-1.amazonaws.com/deployments/:deploymentId",
+            "params": [
+              {
+                "name": "deploymentId",
+                "value": "",
+                "type": "path",
+                "description": "The ID of the deployment."
+              }
+            ]
+          },
+          "docs": "Deletes a deployment."
+        },
+        {
+          "info": {
+            "name": "Amazon Launch Wizard List Workloads",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://launchwizard.us-east-1.amazonaws.com/workloads"
+          },
+          "docs": "Lists the workloads supported by Launch Wizard."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
