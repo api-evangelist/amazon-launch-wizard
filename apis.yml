@@ -44,6 +44,14 @@ apis:
       - type: JSONLD
         url: json-ld/amazon-launch-wizard-context.jsonld
 common:
+  - type: TrustCenter
+    url: security/amazon-launch-wizard-trust-center.yml
+  - type: VulnerabilityDisclosure
+    url: security/amazon-launch-wizard-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/amazon-launch-wizard-domain-security.yml
+  - type: Authentication
+    url: authentication/amazon-launch-wizard-authentication.yml
   - type: Portal
     url: https://aws.amazon.com/launchwizard/
   - type: Portal
