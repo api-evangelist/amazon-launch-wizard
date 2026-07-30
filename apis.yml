@@ -5,7 +5,20 @@ description: >-
   applications on AWS, such as Microsoft SQL Server Always On and HANA-based SAP systems, without the need to manually
   identify and provision individual AWS resources.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/amazon-launch-wizard.png
 tags:
   - AWS
   - Deployment
@@ -17,33 +30,31 @@ created: '2026-03-16'
 modified: '2026-05-19'
 specificationVersion: '0.19'
 apis:
-  - aid: amazon-launch-wizard:aws-launch-wizard-api
-    name: AWS Launch Wizard API
-    description: >-
-      The AWS Launch Wizard API provides programmatic access to manage deployments, workload specs, and deployment
-      events for guided enterprise application deployments on AWS.
-    humanURL: https://aws.amazon.com/launchwizard/
-    baseURL: https://launchwizard.amazonaws.com
-    tags:
-      - Automation
-      - Deployment
-      - Enterprise Applications
-    properties:
-      - type: Documentation
-        url: https://docs.aws.amazon.com/launchwizard/latest/APIReference/Welcome.html
-      - type: OpenAPI
-        url: https://api.apis.guru/v2/specs/amazonaws.com/launchwizard/2018-05-10/openapi.yaml
-      - type: GettingStarted
-        url: https://aws.amazon.com/launchwizard/getting-started/
-      - type: Pricing
-        url: https://aws.amazon.com/launchwizard/pricing/
-      - type: FAQ
-        url: https://aws.amazon.com/launchwizard/faqs/
-      - type: JSONSchema
-        url: json-schema/amazon-launch-wizard-deployment-schema.json
-      - type: JSONLD
-        url: json-ld/amazon-launch-wizard-context.jsonld
+- aid: amazon-launch-wizard:amazon-launch-wizard-deployments-api
+  name: Amazon Launch Wizard Deployments API
+  description: Launch Wizard deployment management
+  humanURL: https://aws.amazon.com/launchwizard/
+  baseURL: https://launchwizard.amazonaws.com
+  tags:
+  - Deployments
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-launch-wizard-deployments-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/launchwizard/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/launchwizard/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/launchwizard/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/launchwizard/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-launch-wizard-deployment-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-launch-wizard-context.jsonld
 common:
+  - type: PostmanWorkspace
+    url: https://www.postman.com/kinlaneapi/amazon-launch-wizard/overview
   - type: AgenticAccess
     url: agentic-access/amazon-launch-wizard-agentic-access.yml
   - type: TrustCenter
