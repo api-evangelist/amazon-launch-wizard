@@ -1,0 +1,14 @@
+{
+  "provider": "amazon-launch-wizard",
+  "sources": [
+    "amazon-launch-wizard-deployments-api-openapi.yml"
+  ],
+  "outputs": [
+    "amazon-launch-wizard-deployments-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

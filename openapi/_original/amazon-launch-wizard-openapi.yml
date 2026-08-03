@@ -1,0 +1,171 @@
+openapi: 3.1.0
+info:
+  title: Amazon Launch Wizard API
+  description: The Amazon Launch Wizard API provides programmatic access to manage Launch Wizard resources.
+  version: '2024-01-01'
+  contact:
+    name: AWS Support
+    url: https://aws.amazon.com/premiumsupport/
+  license:
+    name: Apache 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0.html
+  x-logo:
+    url: https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png
+servers:
+- url: https://launchwizard.us-east-1.amazonaws.com
+  description: Amazon Launch Wizard endpoint
+security:
+- sigv4: []
+tags:
+- name: Deployments
+  description: Launch Wizard deployment management
+paths:
+  /deployments:
+    post:
+      operationId: CreateDeployment
+      summary: Amazon Launch Wizard Create Deployment
+      description: Creates a deployment for the given workload.
+      tags:
+      - Deployments
+      responses:
+        '200':
+          description: Success
+        '400':
+          description: Bad request
+        '403':
+          description: Access denied
+        '500':
+          description: Internal server error
+      x-microcks-operation:
+        delay: 0
+        dispatcher: FALLBACK
+    get:
+      operationId: ListDeployments
+      summary: Amazon Launch Wizard List Deployments
+      description: Lists the deployments that have been created.
+      tags:
+      - Deployments
+      responses:
+        '200':
+          description: Success
+        '400':
+          description: Bad request
+        '403':
+          description: Access denied
+        '500':
+          description: Internal server error
+      x-microcks-operation:
+        delay: 0
+        dispatcher: FALLBACK
+  /deployments/{deploymentId}:
+    get:
+      operationId: GetDeployment
+      summary: Amazon Launch Wizard Get Deployment
+      description: Returns information about the deployment.
+      tags:
+      - Deployments
+      parameters:
+      - name: deploymentId
+        in: path
+        required: true
+        schema:
+          type: string
+        description: The ID of the deployment.
+      responses:
+        '200':
+          description: Success
+        '400':
+          description: Bad request
+        '403':
+          description: Access denied
+        '500':
+          description: Internal server error
+      x-microcks-operation:
+        delay: 0
+        dispatcher: FALLBACK
+    delete:
+      operationId: DeleteDeployment
+      summary: Amazon Launch Wizard Delete Deployment
+      description: Deletes a deployment.
+      tags:
+      - Deployments
+      parameters:
+      - name: deploymentId
+        in: path
+        required: true
+        schema:
+          type: string
+        description: The ID of the deployment.
+      responses:
+        '200':
+          description: Success
+        '400':
+          description: Bad request
+        '403':
+          description: Access denied
+        '500':
+          description: Internal server error
+      x-microcks-operation:
+        delay: 0
+        dispatcher: FALLBACK
+  /workloads:
+    get:
+      operationId: ListWorkloads
+      summary: Amazon Launch Wizard List Workloads
+      description: Lists the workloads supported by Launch Wizard.
+      tags:
+      - Deployments
+      responses:
+        '200':
+          description: Success
+        '400':
+          description: Bad request
+        '403':
+          description: Access denied
+        '500':
+          description: Internal server error
+      x-microcks-operation:
+        delay: 0
+        dispatcher: FALLBACK
+components:
+  securitySchemes:
+    sigv4:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: AWS Signature Version 4 authentication
+  schemas:
+    Deployment:
+      type: object
+      description: An Amazon Launch Wizard deployment of an enterprise application.
+      properties:
+        id:
+          type: string
+          description: The ID of the deployment.
+          example: deployment-abc12345
+        name:
+          type: string
+          description: The name of the deployment.
+          example: sap-hana-production
+        workloadName:
+          type: string
+          description: The name of the workload.
+          example: SAP HANA
+        status:
+          type: string
+          description: The current status of the deployment.
+          example: COMPLETED
+          enum:
+          - COMPLETED
+          - CREATING
+          - FAILED
+          - IN_PROGRESS
+          - VALIDATING
+        createdAt:
+          type: string
+          description: The time the deployment was created.
+          format: date-time
+        deletedAt:
+          type: string
+          description: The time the deployment was deleted.
+          format: date-time
