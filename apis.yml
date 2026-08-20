@@ -36,6 +36,8 @@ apis:
   humanURL: https://aws.amazon.com/launchwizard/
   baseURL: https://launchwizard.amazonaws.com
   tags:
+  - Deployment
+  tags_raw:
   - Deployments
   properties:
   - type: OpenAPI
