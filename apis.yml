@@ -5,6 +5,18 @@ description: >-
   applications on AWS, such as Microsoft SQL Server Always On and HANA-based SAP systems, without the need to manually
   identify and provision individual AWS resources.
 type: Index
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: true
+  label: Hosted service · you call their endpoint
+  confidence: high
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: self-serve
