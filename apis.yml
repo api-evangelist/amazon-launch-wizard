@@ -68,7 +68,7 @@ apis:
     url: json-ld/amazon-launch-wizard-context.jsonld
 common:
 - type: Website
-  url: https://amazon.com
+  url: https://aws.amazon.com/launchwizard/
 - type: PostmanWorkspace
   url: https://www.postman.com/kinlaneapi/amazon-launch-wizard/overview
 - type: AgenticAccess
@@ -144,5 +144,5 @@ common:
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
-x-parent: aws
+x-parent: amazon-web-services
 x-relationship: product
