@@ -67,6 +67,12 @@ apis:
   - type: JSONLD
     url: json-ld/amazon-launch-wizard-context.jsonld
 common:
+- type: Plans
+  url: plans/amazon-launch-wizard-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/amazon-launch-wizard-rate-limits.yml
+- type: FinOps
+  url: finops/amazon-launch-wizard-finops.yml
 - type: Website
   url: https://aws.amazon.com/launchwizard/
 - type: PostmanWorkspace
