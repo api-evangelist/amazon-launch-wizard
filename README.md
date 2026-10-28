@@ -1,4 +1,4 @@
-# Amazon Launch Wizard (amazon-launch-wizard)
+# Amazon Launch Wizard
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,74 +66,164 @@
 
 AWS Launch Wizard is a service that guides you through the sizing, configuration, and deployment of enterprise applications on AWS, such as Microsoft SQL Server Always On and HANA-based SAP systems, without the need to manually identify and provision individual AWS resources.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/amazon-launch-wizard/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/amazon-launch-wizard/refs/heads/main/apis.yml)
+**Areas:** AWS · Deployment · Enterprise Applications · SAP · SQL Server
 
-## Scope
+## Amazon Launch Wizard on APIs.io
 
-- **Type:** Index
+Everything profiled for Amazon Launch Wizard is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/amazon-launch-wizard/](https://apis.io/providers/amazon-launch-wizard/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (3)
 
-- AWS
-- Deployment
-- Enterprise Applications
-- SAP
-- SQL Server
+- [Amazon Launch Wizard Deployments API](https://apis.io/apis/amazon-launch-wizard/amazon-launch-wizard-deployments-api/) — Launch Wizard deployment management
+- [Amazon Launch Wizard Launch Wizard Operations API](https://apis.io/apis/amazon-launch-wizard/amazon-launch-wizard-operations-api/) — The Launch Wizard Operations API from Amazon Launch Wizard — 7 operation(s) for launch wizard operations.
+- [Amazon Launch Wizard Launch Wizard Tags API](https://apis.io/apis/amazon-launch-wizard/amazon-launch-wizard-tags-api/) — The Launch Wizard Tags API from Amazon Launch Wizard — 1 operation(s) for launch wizard tags.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-03-16
-- **Modified:** 2026-05-19
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### AWS Launch Wizard API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-The AWS Launch Wizard API provides programmatic access to manage deployments, workload specs, and deployment events for guided enterprise application deployments on AWS.
+- [Amazon Launch Wizard Agentic Access](https://apis.io/agentic-access/amazon-launch-wizard/amazon-launch-wizard-agentic-access/)
 
-- **Human URL:** [https://aws.amazon.com/launchwizard/](https://aws.amazon.com/launchwizard/)
-- **Base URL:** `https://launchwizard.amazonaws.com`
+#### JSON Schema (1)
 
-#### Tags
+The data models the API reads and writes.
 
-- Automation
-- Deployment
-- Enterprise Applications
+- [Deployment](https://apis.io/schemas/amazon-launch-wizard/amazon-launch-wizard-deployment/)
 
-#### Properties
+#### JSON Structure (1)
 
-- [Documentation](https://docs.aws.amazon.com/launchwizard/latest/APIReference/Welcome.html)
-- [OpenAPI](https://api.apis.guru/v2/specs/amazonaws.com/launchwizard/2018-05-10/openapi.yaml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Getting Started](https://aws.amazon.com/launchwizard/getting-started/)
-- [Pricing](https://aws.amazon.com/launchwizard/pricing/)
-- [F A Q](https://aws.amazon.com/launchwizard/faqs/)
-- [JSON Schema](json-schema/amazon-launch-wizard-deployment-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON-LD](json-ld/amazon-launch-wizard-context.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [Postman Collection](collections/amazon-launch-wizard.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/amazon-launch-wizard.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Data models expressed in JSON Structure.
 
-## Common Properties
+- [Amazon Launch Wizard Deployment Structure](https://apis.io/json-structure/amazon-launch-wizard/amazon-launch-wizard-deployment-structure/)
 
-- [Portal](https://aws.amazon.com/launchwizard/)
-- [Portal](https://aws.amazon.com/launchwizard/)
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Amazon Launch Wizard Context](https://apis.io/jsonld/amazon-launch-wizard/amazon-launch-wizard-context/)
+
+#### Vocabulary (1)
+
+The provider's domain terms, defined.
+
+- [Amazon Launch Wizard Vocabulary](https://apis.io/vocabularies/amazon-launch-wizard/amazon-launch-wizard-vocabulary/)
+
+#### Examples (1)
+
+Example requests and responses.
+
+- [Amazon Launch Wizard Deployment Example](https://apis.io/examples/amazon-launch-wizard/amazon-launch-wizard-deployment-example/)
+
+#### Collections (3)
+
+Postman and Open Collection request collections.
+
+- [Amazon Launch Wizard API](https://apis.io/collections/amazon-launch-wizard/open-amazon-launch-wizard/)
+- [Amazon Launch Wizard Deployments API](https://apis.io/collections/amazon-launch-wizard/open-amazon-launch-wizard-deployments-api/)
+- [Amazon Launch Wizard Deployments API](https://apis.io/collections/amazon-launch-wizard/postman-amazon-launch-wizard-deployments-api/)
+
+#### Governance rules (2)
+
+Spectral rulesets for the provider's contracts.
+
+- [Amazon Launch Wizard — jsonschema rules](https://apis.io/rules/amazon-launch-wizard/amazon-launch-wizard-jsonschema-spectral-rules/)
+- [Amazon Launch Wizard API Rules](https://apis.io/rules/amazon-launch-wizard/amazon-launch-wizard-spectral-rules/)
+
+#### Security (4)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Amazon Launch Wizard Authentication](https://apis.io/security/amazon-launch-wizard/amazon-launch-wizard-authentication/)
+- [Amazon Launch Wizard Domain Security](https://apis.io/security/amazon-launch-wizard/amazon-launch-wizard-domain-security/)
+- [Amazon Launch Wizard Trust Center](https://apis.io/security/amazon-launch-wizard/amazon-launch-wizard-trust-center/)
+- [Amazon Launch Wizard Vulnerability Disclosure](https://apis.io/security/amazon-launch-wizard/amazon-launch-wizard-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Amazon Launch Wizard Plans Pricing](https://apis.io/plans/amazon-launch-wizard/amazon-launch-wizard-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Amazon Launch Wizard Rate Limits](https://apis.io/rate-limits/amazon-launch-wizard/amazon-launch-wizard-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Amazon Launch Wizard Finops](https://apis.io/finops/amazon-launch-wizard/amazon-launch-wizard-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://aws.amazon.com/launchwizard/)
 - [Documentation](https://docs.aws.amazon.com/launchwizard/)
-- [Terms of Service](https://aws.amazon.com/service-terms/)
-- [Privacy Policy](https://aws.amazon.com/privacy/)
 - [Support](https://aws.amazon.com/premiumsupport/)
 - [Blog](https://aws.amazon.com/blogs/apn/tag/aws-launch-wizard/)
-- [GitHub Organization](https://github.com/aws)
-- [Console](https://console.aws.amazon.com/launchwizard/)
-- [Sign Up](https://portal.aws.amazon.com/billing/signup)
-- [Login](https://signin.aws.amazon.com/)
-- [Status Page](https://health.aws.amazon.com/health/status)
-- [Contact](https://aws.amazon.com/contact-us/)
-- [Features](undefined)
-- [Use Cases](undefined)
-- [Integrations](undefined)
-- [Spectral Rules](rules/amazon-launch-wizard-spectral-rules.yml)
-- [Vocabulary](vocabulary/amazon-launch-wizard-vocabulary.yaml)
+- [Terms of service](https://aws.amazon.com/service-terms/)
+- [Privacy policy](https://aws.amazon.com/privacy/)
+- [GitHub](https://github.com/aws)
+- [Status](https://health.aws.amazon.com/health/status)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 48.7** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 58.5 |
+| Contract governance | 27.3 |
+| Operational transparency | 36.8 |
+| Developer ergonomics | 46.4 |
+| Access clarity | 43.4 |
+
+**Agent readiness 19.6** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 35.3** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/amazon-launch-wizard/](https://apis.io/providers/amazon-launch-wizard/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Amazon Launch Wizard: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/amazon-launch-wizard/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
