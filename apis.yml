@@ -1,9 +1,12 @@
 aid: amazon-launch-wizard
+
 name: Amazon Launch Wizard
-description: AWS Launch Wizard is a service that guides you through the sizing, configuration, and deployment
-  of enterprise applications on AWS, such as Microsoft SQL Server Always On and HANA-based SAP systems,
-  without the need to manually identify and provision individual AWS resources.
+
+description: AWS Launch Wizard is a service that guides you through the sizing, configuration, and deployment of enterprise applications on AWS,
+  such as Microsoft SQL Server Always On and HANA-based SAP systems, without the need to manually identify and provision individual AWS resources.
+
 type: Index
+
 deliveryModel:
   model: saas
   open_source: false
@@ -16,6 +19,7 @@ deliveryModel:
   - pricing
   generated: '2026-08-28'
   method: derived
+
 accessModel:
   pricing: freemium
   onboarding: self-serve
@@ -31,9 +35,10 @@ accessModel:
   - plans
   - authentication
   - security
-  generated: '2026-11-06'
+  generated: '2026-11-13'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/amazon-launch-wizard.png
+
 tags:
 - Amazon Web Services
 - Deployment
@@ -46,58 +51,60 @@ tags_raw:
 - Enterprise Applications
 - SAP
 - SQL Server
+
 url: https://raw.githubusercontent.com/api-evangelist/amazon-launch-wizard/refs/heads/main/apis.yml
+
 created: '2026-03-16'
+
 modified: '2026-09-16'
+
 specificationVersion: '0.23'
-apis:
-- aid: amazon-launch-wizard:amazon-launch-wizard-deployments-api
-  name: Amazon Launch Wizard Deployments API
-  description: Launch Wizard deployment management
-  humanURL: https://aws.amazon.com/launchwizard/
-  baseURL: https://launchwizard.amazonaws.com
-  tags:
-  - Deployment
-  tags_raw:
-  - Deployments
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-launch-wizard-deployments-api-openapi.yml
-  - type: Documentation
-    url: https://docs.aws.amazon.com/launchwizard/latest/APIReference/Welcome.html
-  - type: GettingStarted
-    url: https://aws.amazon.com/launchwizard/getting-started/
-  - type: Pricing
-    url: https://aws.amazon.com/launchwizard/pricing/
-  - type: FAQ
-    url: https://aws.amazon.com/launchwizard/faqs/
-  - type: JSONSchema
-    url: json-schema/amazon-launch-wizard-deployment-schema.json
-  - type: JSONLD
-    url: json-ld/amazon-launch-wizard-context.jsonld
-- aid: amazon-launch-wizard:amazon-launch-wizard-operations-api
-  name: Amazon Launch Wizard Launch Wizard Operations API
-  description: >-
-    The Launch Wizard Operations API from Amazon Launch Wizard — 7 operation(s) for launch wizard operations.
-  humanURL: https://aws.amazon.com/launchwizard/
-  baseURL: https://launchwizard.amazonaws.com
-  tags:
-  - Launch Wizard Operations
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-launch-wizard-operations-api-openapi.yml
-- aid: amazon-launch-wizard:amazon-launch-wizard-tags-api
-  name: Amazon Launch Wizard Launch Wizard Tags API
-  description: >-
-    The Launch Wizard Tags API from Amazon Launch Wizard — 1 operation(s) for launch wizard tags.
-  humanURL: https://aws.amazon.com/launchwizard/
-  baseURL: https://launchwizard.amazonaws.com
-  tags:
-  - Launch Wizard Tags
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-launch-wizard-tags-api-openapi.yml
+
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+
 common:
+- type: Spectral
+  url: rules/amazon-launch-wizard-spectral-rules.yml
+- type: Spectral
+  url: rules/amazon-launch-wizard-rules.yml
+- type: Spectral
+  url: rules/amazon-launch-wizard-jsonschema-spectral-rules.yml
+- type: Vocabulary
+  url: vocabulary/amazon-launch-wizard-vocabulary.yml
+- type: DataModel
+  url: data-model/amazon-launch-wizard-data-model.yml
+- type: CLI
+  url: cli/amazon-launch-wizard-cli.yml
+- type: ChangeLog
+  url: changelog/amazon-launch-wizard-changelog.yml
+- type: Compliance
+  url: https://aws.amazon.com/compliance/
+- type: ErrorCatalog
+  url: errors/amazon-launch-wizard-problem-types.yml
+- type: Conformance
+  url: conformance/amazon-launch-wizard-conformance.yml
+- type: LLMsTxt
+  url: llms/amazon-launch-wizard-llms.txt
+- type: SecurityTxt
+  url: well-known/amazon-launch-wizard-security.txt
+- type: WellKnown
+  url: well-known/amazon-launch-wizard-well-known.yml
+- type: Hosts
+  url: hosts/amazon-launch-wizard-hosts.yml
+- type: Vendors
+  url: vendors/amazon-launch-wizard-vendors.yml
+- type: SDKs
+  url: packages/amazon-launch-wizard-packages.yml
+- type: Packages
+  url: packages/amazon-launch-wizard-packages.yml
+- type: Security
+  url: https://aws.amazon.com/security/?nc2=h_dsc_aa_sec
+- type: Newsroom
+  url: https://aws.amazon.com/media/?nc2=h_sol_ind_med
+- type: GettingStarted
+  url: https://developer.amazon.com/frustration-free-setup
 - type: Plans
   url: plans/amazon-launch-wizard-plans-pricing.yml
 - type: RateLimits
@@ -178,8 +185,92 @@ common:
   url: rules/amazon-launch-wizard-spectral-rules.yml
 - type: Vocabulary
   url: vocabulary/amazon-launch-wizard-vocabulary.yaml
-maintainers:
-- FN: Kin Lane
-  email: kin@apievangelist.com
+- type: UsageTerms
+  url: terms/amazon-launch-wizard-terms-of-service.yml
+- type: DataProcessing
+  url: privacy/amazon-launch-wizard-privacy-policy.yml
+- type: Attestations
+  url: compliance/amazon-launch-wizard-compliance.yml
+- type: Eligibility
+  url: eligibility/amazon-launch-wizard-eligibility.yml
+- type: AIPreferences
+  url: ai-preferences/amazon-launch-wizard-ai-preferences.yml
+
+apis:
+- aid: amazon-launch-wizard:amazon-launch-wizard-deployments-api
+  name: Amazon Launch Wizard Deployments API
+  description: Launch Wizard deployment management
+  humanURL: https://aws.amazon.com/launchwizard/
+  baseURL: https://launchwizard.amazonaws.com
+  tags:
+  - Deployment
+  tags_raw:
+  - Deployments
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-launch-wizard-deployments-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/launchwizard/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/launchwizard/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/launchwizard/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/launchwizard/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-launch-wizard-deployment-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-launch-wizard-context.jsonld
+- aid: amazon-launch-wizard:amazon-launch-wizard-operations-api
+  name: Amazon Launch Wizard Launch Wizard Operations API
+  description: The Launch Wizard Operations API from Amazon Launch Wizard — 7 operation(s) for launch wizard operations.
+  humanURL: https://aws.amazon.com/launchwizard/
+  baseURL: https://launchwizard.amazonaws.com
+  tags:
+  - Launch Wizard Operations
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-launch-wizard-operations-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-launch-wizard-update-deployment-input-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-launch-wizard-list-deployment-pattern-versions-input-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-launch-wizard-get-deployment-pattern-version-input-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-launch-wizard-list-deployment-events-input-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-launch-wizard-list-workload-deployment-patterns-input-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-launch-wizard-list-workload-deployment-patterns-output-schema.json
+- aid: amazon-launch-wizard:amazon-launch-wizard-tags-api
+  name: Amazon Launch Wizard Launch Wizard Tags API
+  description: The Launch Wizard Tags API from Amazon Launch Wizard — 1 operation(s) for launch wizard tags.
+  humanURL: https://aws.amazon.com/launchwizard/
+  baseURL: https://launchwizard.amazonaws.com
+  tags:
+  - Launch Wizard Tags
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-launch-wizard-tags-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-launch-wizard-tag-resource-input-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-launch-wizard-untag-resource-input-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-launch-wizard-list-tags-for-resource-input-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-launch-wizard-list-tags-for-resource-output-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-launch-wizard-tag-resource-output-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-launch-wizard-untag-resource-output-schema.json
+
 x-parent: amazon-web-services
+
 x-relationship: product
+x-enrichment:
+  date: '2026-11-11'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v6

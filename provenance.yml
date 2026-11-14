@@ -5,8 +5,23 @@ artifacts:
   agentic-access/amazon-launch-wizard-agentic-access.yml:
     method: generated
     evidence: declared in the artifact
+  ai-preferences/amazon-launch-wizard-ai-preferences.yml:
+    method: harvested
+    evidence: declared in the artifact
   authentication/amazon-launch-wizard-authentication.yml:
     method: derived
+    evidence: declared in the artifact
+  certification/observations-2026-11-11.jsonl:
+    method: unknown
+    evidence: no authorship recorded
+  certification/status.yml:
+    method: unknown
+    evidence: no authorship recorded
+  changelog/amazon-launch-wizard-changelog.yml:
+    method: searched
+    evidence: declared in the artifact
+  cli/amazon-launch-wizard-cli.yml:
+    method: searched
     evidence: declared in the artifact
   collections/amazon-launch-wizard-deployments-api.opencollection.json:
     method: derived
@@ -20,6 +35,21 @@ artifacts:
   collections/amazon-launch-wizard.postman_collection.json:
     method: derived
     evidence: openapi/amazon-launch-wizard
+  compliance/amazon-launch-wizard-compliance.yml:
+    method: harvested
+    evidence: declared in the artifact
+  conformance/amazon-launch-wizard-conformance.yml:
+    method: derived
+    evidence: declared in the artifact
+  data-model/amazon-launch-wizard-data-model.yml:
+    method: derived
+    evidence: declared in the artifact
+  eligibility/amazon-launch-wizard-eligibility.yml:
+    method: harvested
+    evidence: declared in the artifact
+  errors/amazon-launch-wizard-problem-types.yml:
+    method: derived
+    evidence: declared in the artifact
   examples/amazon-launch-wizard-deployment-example.json:
     method: unknown
     evidence: no authorship recorded
@@ -29,6 +59,9 @@ artifacts:
   front-door-ai/2026-09-17.yml:
     method: unknown
     evidence: no authorship recorded
+  hosts/amazon-launch-wizard-hosts.yml:
+    method: derived
+    evidence: declared in the artifact
   integrations/_index.yml:
     method: generated
     evidence: carries an API Evangelist house phrase
@@ -41,13 +74,49 @@ artifacts:
   json-schema/amazon-launch-wizard-deployment-schema.json:
     method: unknown
     evidence: no authorship recorded
+  json-schema/amazon-launch-wizard-get-deployment-pattern-version-input-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-launch-wizard-list-deployment-events-input-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-launch-wizard-list-deployment-pattern-versions-input-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-launch-wizard-list-tags-for-resource-input-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-launch-wizard-list-tags-for-resource-output-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-launch-wizard-list-workload-deployment-patterns-input-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-launch-wizard-list-workload-deployment-patterns-output-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-launch-wizard-tag-resource-input-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-launch-wizard-tag-resource-output-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-launch-wizard-untag-resource-input-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-launch-wizard-untag-resource-output-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-launch-wizard-update-deployment-input-schema.json:
+    method: unknown
+    evidence: no authorship recorded
   json-structure/amazon-launch-wizard-deployment-structure.json:
     method: unknown
     evidence: no authorship recorded
   kin/checks-2026-10-23T222754.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
-  kin/checks-2026-11-02T082323.yml:
+  kin/checks-2026-11-06T143934.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
   kin/score-2026-09-23T000603.yml:
@@ -116,10 +185,18 @@ artifacts:
   kin/score-2026-11-02T082323.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
-  openapi/_original/amazon-launch-wizard-openapi.yml:
-    method: harvested
-    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
-      to the provider's source is unverified
+  kin/score-2026-11-06T143934.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  llms/amazon-launch-wizard-llms-provenance.yml:
+    method: unknown
+    evidence: no authorship recorded
+  llms/amazon-launch-wizard-llms.txt:
+    method: unknown
+    evidence: no authorship recorded
+  mcp/amazon-launch-wizard-mcp.yml:
+    method: derived
+    evidence: declared in the artifact
   openapi/amazon-launch-wizard-deployments-api-openapi.yml:
     method: unknown
     evidence: no authorship recorded
@@ -129,16 +206,28 @@ artifacts:
   openapi/amazon-launch-wizard-tags-api-openapi.yml:
     method: unknown
     evidence: no authorship recorded
+  packages/amazon-launch-wizard-packages.yml:
+    method: searched
+    evidence: declared in the artifact
+  patterns/amazon-launch-wizard-patterns.yml:
+    method: derived
+    evidence: declared in the artifact
   plans/amazon-launch-wizard-plans-pricing.yml:
     method: generated
     evidence: declared in the artifact
   postman/amazon-launch-wizard-deployments-api.postman_collection.json:
     method: derived
     evidence: openapi/amazon-launch-wizard-deployments-api
+  privacy/amazon-launch-wizard-privacy-policy.yml:
+    method: harvested
+    evidence: declared in the artifact
   rate-limits/amazon-launch-wizard-rate-limits.yml:
     method: generated
     evidence: declared in the artifact
   rules/amazon-launch-wizard-jsonschema-spectral-rules.yml:
+    method: generated
+    evidence: declared in the artifact
+  rules/amazon-launch-wizard-rules.yml:
     method: generated
     evidence: declared in the artifact
   rules/amazon-launch-wizard-spectral-rules.yml:
@@ -157,8 +246,27 @@ artifacts:
     method: generated
     evidence: declared in the artifact
   smithy/launch-wizard-2018-05-10.json:
+    method: harvested
+    evidence: byte-identical to https://raw.githubusercontent.com/aws/api-models-aws/3cd98287b471c106254abd89279cc87308d38bfd/models/launch-wizard/service/2018-05-10/launch-wizard-2018-05-10.json
+      (sha256 2a7ae490e793, fetched 2026-11-11T21:11:32+00:00)
+  terms/amazon-launch-wizard-terms-of-service.yml:
+    method: harvested
+    evidence: declared in the artifact
+  vendors/amazon-launch-wizard-vendors.yml:
     method: unknown
     evidence: no authorship recorded
   vocabulary/amazon-launch-wizard-vocabulary.yaml:
+    method: unknown
+    evidence: no authorship recorded
+  vocabulary/amazon-launch-wizard-vocabulary.yml:
+    method: derived
+    evidence: declared in the artifact
+  well-known/amazon-launch-wizard-midway-auth-openid-configuration.json:
+    method: unknown
+    evidence: no authorship recorded
+  well-known/amazon-launch-wizard-security.txt:
+    method: unknown
+    evidence: no authorship recorded
+  well-known/amazon-launch-wizard-well-known.yml:
     method: unknown
     evidence: no authorship recorded
